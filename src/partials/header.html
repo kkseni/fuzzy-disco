@@ -1,19 +1,72 @@
 <header class="header">
+  <!-- > тег буде вкладено ul>li
+* скільки однакових тегів буде додано li*8
+() декілька рівнів вкладеності 
++ між сусідами li>img+h3+p  -->
+
+  <!-- (nav>(a>img)+ul>li*4>a)+address>ul>li*4>a -->
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    <nav class="header-navigation">
+      <a href="./index.html" class="header-logo">
+        <img src="../img/logo.png" alt="logo"
+      /></a>
+      <ul class="header-nav-list">
+        <li class="nav-list-item">
+          <a href="" class="nav-list-link">About us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="nav-list-item">
+          <a href="" class="nav-list-link">Our collection </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="#order" class="nav-list-link">Customer Order</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="" class="nav-list-link">Testimonials</a>
         </li>
       </ul>
     </nav>
+    <address class="header-address">
+      <ul class="address-list">
+        <li class="address-item">
+          <a href="tel:+380684439426" class="address-link address-tel"
+            >+380 (68) 443-94-26</a
+          >
+        </li>
+        <li class="address-item">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="address-link social-link"
+            >f</a
+          >
+        </li>
+        <li class="address-item">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="address-link social-link"
+            >i</a
+          >
+        </li>
+        <li class="address-item">
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            class="address-link social-link"
+            >y</a
+          >
+        </li>
+      </ul>
+    </address>
+
+    <button type="button" class="mobile-menu-btn">
+      <svg width="36" height="24" viewBox="0 0 24 24">
+        <use href="../img/icons.svg#icon-Nav" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu">
+   
   </div>
 </header>
